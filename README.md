@@ -11,8 +11,8 @@ The goal of this project is to implement a predictive maintenance system for ind
 - **Target Variable:** `Machine failure` (Binary: 0 = Healthy / No Failure, 1 = Equipment Breakdown)
 
 ## c. Repository and Live Links
-- **GitHub Repository Link:** [INSERT_YOUR_GITHUB_REPO_LINK_HERE]
-- **Live Streamlit App Link:** [INSERT_YOUR_STREAMLIT_APP_LINK_HERE]
+- **GitHub Repository Link:** https://github.com/mayureshy25/Machine_Learning_Assignment_2
+- **Live Streamlit App Link:** https://machine-learningassignment-2.streamlit.app/
 
 ## d. Models Used & Comparative Evaluation
 
