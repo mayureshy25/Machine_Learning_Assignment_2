@@ -6,9 +6,14 @@ The goal of this project is to implement a predictive maintenance system for ind
 ## b. Dataset Description
 - **Dataset Name:** AI4I 2020 Predictive Maintenance Dataset
 - **Source:** UCI Machine Learning Repository
-- **Instances:** 10,000 instances
-- **Features:** 14 attributes (Air temperature, Process temperature, Rotational speed, Torque, Tool wear, Type, etc.)
+- **Dataset Dimension:** 10,000 instances, 14 attributes (meets raw scale criteria: >500 instances, >12 features)
 - **Target Variable:** `Machine failure` (Binary: 0 = Healthy / No Failure, 1 = Equipment Breakdown)
+- **Feature Selection & Engineering Diligence:** 
+  - Raw attributes: `[UDI, Product ID, Type, Air temperature, Process temperature, Rotational speed, Torque, Tool wear, Machine failure, TWF, HDF, PWF, OSF, RNF]`
+  - Identifiers (`UDI`, `Product ID`) were excluded to prevent non-generalizable index memorization.
+  - Granular breakdown flags (`TWF, HDF, PWF, OSF, RNF`) represent specific failure sub-modes and were dropped to prevent direct target leakage.
+  - Final training & evaluation used the 6 operational sensor and physical attributes: `Type`, `Air temperature [K]`, `Process temperature [K]`, `Rotational speed [rpm]`, `Torque [Nm]`, and `Tool wear [min]`.
+- **Split Strategy:** 80% Training set (8,000 instances) and 20% Stratified Test set (2,000 instances).
 
 ## c. Repository and Live Links
 - **GitHub Repository Link:** https://github.com/mayureshy25/Machine_Learning_Assignment_2
