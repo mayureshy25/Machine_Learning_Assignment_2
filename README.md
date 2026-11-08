@@ -6,7 +6,7 @@ The goal of this project is to implement a predictive maintenance system for ind
 ## b. Dataset Description
 - **Dataset Name:** AI4I 2020 Predictive Maintenance Dataset
 - **Source:** UCI Machine Learning Repository
-- **Dataset Dimension:** 10,000 instances, 14 attributes (meets raw scale criteria: >500 instances, >12 features)
+- **Dataset Dimension:** 10,000 instances, 14 attributes
 - **Target Variable:** `Machine failure` (Binary: 0 = Healthy / No Failure, 1 = Equipment Breakdown)
 - **Feature Selection & Engineering Diligence:** 
   - Raw attributes: `[UDI, Product ID, Type, Air temperature, Process temperature, Rotational speed, Torque, Tool wear, Machine failure, TWF, HDF, PWF, OSF, RNF]`
